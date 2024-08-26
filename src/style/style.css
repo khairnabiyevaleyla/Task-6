@@ -53,14 +53,14 @@ table {
   border-spacing: 0;
 }
 
-#header .top .logo_img img {
+#header .navbar_menu .left .logo_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-#header .top .navbar .nav_menu .page_menu__sub, #header .top .navbar .nav_menu .home_menu__sub {
+#header .navbar_menu .left .navbar .nav_menu .page_menu__sub, #header .navbar_menu .left .navbar .nav_menu .home_menu__sub {
   position: absolute;
   width: 250px;
   background-color: #0E384C;
@@ -77,11 +77,41 @@ table {
   transition: 0.5s ease-in-out;
 }
 
+#header .navbar_menu .right .book a {
+  padding: 14px 11px 14px 20px;
+  background: #1E84B5;
+  border-radius: 99px;
+  border: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5em;
+  transition: 0.3s ease-out;
+  width: 200px;
+  box-shadow: inset 0 0 0 0 #0E384C;
+}
+
+#header .navbar_menu .right .book a:hover {
+  box-shadow: inset 200px 0 0 0 #0E384C;
+}
+
 #header {
   font-family: "Poppins", sans-serif;
-  margin: 20px 30px;
+  background-color: #EFF8FF;
 }
-#header .top {
+#header .navbar_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin: 10px 30px;
+  padding: 10px 0;
+}
+#header .navbar_menu .left {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,15 +119,16 @@ table {
   flex-wrap: nowrap;
   gap: 0;
 }
-#header .top .logo_img {
+#header .navbar_menu .left .logo_img {
   width: 180px;
   height: 80px;
+  margin-right: 70px;
 }
-#header .top .logo_img img {
+#header .navbar_menu .left .logo_img img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-#header .top .navbar {
+#header .navbar_menu .left .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -106,7 +137,7 @@ table {
   gap: 10px;
   margin-left: 50px;
 }
-#header .top .navbar .nav_menu {
+#header .navbar_menu .left .navbar .nav_menu {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,41 +150,46 @@ table {
   font-weight: 500;
   cursor: pointer;
 }
-#header .top .navbar .nav_menu li:hover {
+#header .navbar_menu .left .navbar .nav_menu li:hover {
   color: #1E84B5;
 }
-#header .top .navbar .nav_menu .home_menu {
+#header .navbar_menu .left .navbar .nav_menu .home_menu {
   position: relative;
 }
-#header .top .navbar .nav_menu .home_menu:hover .home_menu__sub {
+#header .navbar_menu .left .navbar .nav_menu .home_menu:hover .home_menu__sub {
   opacity: 1;
   visibility: visible;
 }
-#header .top .navbar .nav_menu .page_menu:hover .page_menu__sub {
+#header .navbar_menu .left .navbar .nav_menu .page_menu:hover .page_menu__sub {
   opacity: 1;
   visibility: visible;
 }
-#header .top .navbar .nav_menu .page_menu__sub {
+#header .navbar_menu .left .navbar .nav_menu .page_menu__sub {
   width: 210px;
 }
-#header .top .book {
+#header .navbar_menu .right {
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+  margin-left: 150px;
+}
+#header .navbar_menu .right .book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: 0;
 }
-#header .top .book a {
-  padding: 14px 50px 14px 20px;
-  background: #1E84B5;
-  border-radius: 99px;
-  border: none;
-  color: #FFFFFF;
-  text-decoration: none;
-  text-transform: capitalize;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 1.5em;
-  display: inline-block;
+#header .navbar_menu .right .book a i {
+  background-color: #FFFFFF;
+  color: #1E84B5;
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  font-size: 16px;
+  padding: 8px;
 }/*# sourceMappingURL=style.css.map */
