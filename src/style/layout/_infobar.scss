@@ -1,0 +1,43 @@
+#infobar {
+    background: $primary-color;
+    padding: 40px;
+    font-family: $default-font;
+    .contact {
+        @include Flexible (center,center,row,nowrap,10px);
+        color: $white-color;
+       text-transform: capitalize;
+       line-height: 28px;
+        .icon_box {
+            i {
+                font-size: 54px;
+            }
+        }
+        .content {
+            h1 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+    .button {
+        @include Flexible (flex-end,end,row,nowrap,0);
+        .book { 
+        
+            a {
+                @extend  %default_btn;
+                &:hover {
+                    @extend   %hoverdefault_btn;
+                    box-shadow: inset 225px 0 0 0 $white-color;
+                    color: $primary-color;
+                }
+                i {
+                    @extend %btn_icon;
+                }
+            }
+        }
+    }
+}
