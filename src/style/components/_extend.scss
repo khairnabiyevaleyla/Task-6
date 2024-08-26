@@ -38,5 +38,15 @@
   }
 
   %hoverdefault_btn {
-    box-shadow: inset 200px 0 0 0 $primary-color;
+    box-shadow: inset 300px 0 0 0 $primary-color;
+  }
+
+  %btn_icon {
+    background-color: $white-color;
+    color: $accent-color;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    padding: 8px;
   }

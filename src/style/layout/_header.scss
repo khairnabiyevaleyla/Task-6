@@ -1,6 +1,10 @@
 #header {
     font-family: $default-font;
     background-color: $bg_color;
+    border-bottom: 1px solid $borderbottom_color;
+    @media (max-width: 600px) {
+        display: none;
+    }
 .navbar_menu {
     @include Flexible (center,center,row,nowrap,30px);
     margin: 10px 30px;
@@ -70,13 +74,7 @@
                 
                 }
                 i {
-                    background-color: $white-color;
-                    color: $accent-color;
-                    border-radius: 100%;
-                    width: 15px;
-                    height: 15px;
-                    font-size: 16px;
-                    padding: 8px;
+                    @extend  %btn_icon;
                 }
             }
            }
