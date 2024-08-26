@@ -1,0 +1,70 @@
+#header {
+    font-family: $default-font;
+    margin: 20px 30px;
+   .top { 
+    @include Flexible (center,center,row,nowrap,0);
+    .logo_img {
+        width: 180px;
+        height: 80px;
+        
+        img {
+            @extend %base_img;
+            object-fit: contain;
+        }
+    }
+   .navbar {
+    @include Flexible (center,center,row,nowrap,10px);
+    margin-left: 50px;
+    .nav_menu {
+        @include Flexible (center,center,row,nowrap,50px);
+        font-size: 16px;
+        text-transform: capitalize;
+        color: $primary-color;
+        font-weight: 500;
+        cursor: pointer;
+        li {
+            &:hover {
+                color: $accent-color;
+            }
+        }
+        .home_menu {
+            position: relative;
+               &:hover .home_menu__sub {
+                opacity: 1;
+                visibility: visible;
+             }  
+             &__sub{
+               @extend %sub_menu;
+            
+            }
+        }
+        .page_menu {
+            &:hover .page_menu__sub {
+                opacity: 1;
+                visibility: visible;
+             }  
+            &__sub {
+                @extend %sub_menu;
+                width: 210px;
+             }
+        }
+    }
+   }
+   .book {
+    @include Flexible (center,end,row,nowrap,0);
+    a {
+        padding: 14px 50px 14px 20px;
+        background: $accent-color;
+        border-radius: 99px;
+        border: none;
+        color: $white-color;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.5em;
+        display: inline-block;
+    }
+   }
+   }
+}

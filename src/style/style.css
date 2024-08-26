@@ -1,1 +1,159 @@
-/*# sourceMappingURL=style.css.map */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#header .top .logo_img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#header .top .navbar .nav_menu .page_menu__sub, #header .top .navbar .nav_menu .home_menu__sub {
+  position: absolute;
+  width: 250px;
+  background-color: #0E384C;
+  color: #FFFFFF;
+  border-radius: 23px;
+  padding: 10px 20px;
+  line-height: 40px;
+  top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+#header {
+  font-family: "Poppins", sans-serif;
+  margin: 20px 30px;
+}
+#header .top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+#header .top .logo_img {
+  width: 180px;
+  height: 80px;
+}
+#header .top .logo_img img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#header .top .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-left: 50px;
+}
+#header .top .navbar .nav_menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 50px;
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #0E384C;
+  font-weight: 500;
+  cursor: pointer;
+}
+#header .top .navbar .nav_menu li:hover {
+  color: #1E84B5;
+}
+#header .top .navbar .nav_menu .home_menu {
+  position: relative;
+}
+#header .top .navbar .nav_menu .home_menu:hover .home_menu__sub {
+  opacity: 1;
+  visibility: visible;
+}
+#header .top .navbar .nav_menu .page_menu:hover .page_menu__sub {
+  opacity: 1;
+  visibility: visible;
+}
+#header .top .navbar .nav_menu .page_menu__sub {
+  width: 210px;
+}
+#header .top .book {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+#header .top .book a {
+  padding: 14px 50px 14px 20px;
+  background: #1E84B5;
+  border-radius: 99px;
+  border: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5em;
+  display: inline-block;
+}/*# sourceMappingURL=style.css.map */
