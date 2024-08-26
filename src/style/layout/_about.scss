@@ -1,0 +1,34 @@
+#about {
+.left{
+    .about-image {
+        .about-img-1{
+        position: relative;
+       }
+       .about-img-2{
+          img {
+            position: absolute;
+            bottom: -900px;
+            left: 250px;
+            border: 7px solid $white-color;
+            border-radius: 40px;
+          }
+       }
+       .about-experience {
+        img {
+            position: absolute;
+            animation: rotate 30s infinite linear;
+            bottom: -550px;
+            left: 420px;
+            @keyframes rotate {
+                from {
+                  transform: rotate(0deg); // Start at 0 degrees
+                }
+                to {
+                  transform: rotate(360deg); // End at 360 degrees
+                }
+              }
+        }
+       }
+       }
+    }
+}

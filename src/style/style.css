@@ -295,4 +295,28 @@ table {
 #infobar .button .book a:hover {
   box-shadow: inset 225px 0 0 0 #FFFFFF;
   color: #0E384C;
+}
+#about .left .about-image .about-img-1 {
+  position: relative;
+}
+#about .left .about-image .about-img-2 img {
+  position: absolute;
+  bottom: -900px;
+  left: 250px;
+  border: 7px solid #FFFFFF;
+  border-radius: 40px;
+}
+#about .left .about-image .about-experience img {
+  position: absolute;
+  animation: rotate 30s infinite linear;
+  bottom: -550px;
+  left: 420px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=style.css.map */
