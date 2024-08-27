@@ -1,0 +1,64 @@
+#why-choose-us {
+    font-family: $default-font;
+    background-color: $bg_color;
+    padding-top: 40px;
+    padding-bottom: 80px;
+    .title {
+      
+        h3 {
+            @extend   %title_h3;
+            margin: 10px 0;
+        }
+        h1 {
+            @extend   %title_h1;
+            text-transform: capitalize;
+            margin: 10px 0;
+            span {
+                color: $accent-color;
+            }
+        }
+        p {
+            @extend   %title_p;
+            margin: 20px 0;
+        }
+    }
+    .choose-box-left {
+        padding: 20px 0;
+        @include Flexible (center,center,row,nowrap,20px);
+        text-align: end;
+        line-height: 38px;
+        .content {
+            h3 {
+                font-size: 20px;
+                font-weight: 550;
+                color: $primary-color;
+                text-transform: capitalize;
+            }
+            p {
+               @extend   %title_p;
+            }
+        }
+    }
+    .choose-box-img {
+      .box-image {
+       @include Flexible (center,center,row,nowrap,30px);
+      }
+    }
+    .choose-box-right {
+        padding: 20px 0;
+        @include Flexible (center,center,row,nowrap,20px);
+        text-align: start;
+        line-height: 38px;
+        .content {
+            h3 {
+                font-size: 20px;
+                font-weight: 550;
+                color: $primary-color;
+                text-transform: capitalize;
+            }
+            p {
+               @extend   %title_p;
+            }
+        }
+    }
+}
