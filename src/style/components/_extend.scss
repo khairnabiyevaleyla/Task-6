@@ -37,6 +37,22 @@
     background-size: 200% 100%;
     background-position: right;
   }
+  %default_btn_white {
+    padding: 14px 11px 14px 20px;
+    background-color: $white-color;
+    border-radius: 99px;
+    border: none;
+    color: $accent-color;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5em;
+    transition: 0.3s ease-out;
+    background: linear-gradient(to right, $primary-color 50%, $white-color 50%);
+    background-size: 200% 100%;
+    background-position: right;
+  }
 
   %hoverdefault_btn {
     background-position: left;
@@ -45,6 +61,15 @@
   %btn_icon {
     background-color: $white-color;
     color: $accent-color;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    font-size: 16px;
+    padding: 8px;
+  }
+  %btn_icon_white {
+    background-color: $accent-color;
+    color: $white-color;
     border-radius: 100%;
     width: 15px;
     height: 15px;

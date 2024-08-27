@@ -1,0 +1,48 @@
+#banner {
+    font-family: $default-font;
+    background-color: $bg_color;
+    .banner_img {
+        background-image: url(https://demo.awaikenthemes.com/html-preview/dentaire/images/visit-clinic-bg.jpg);
+        min-height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 40px;
+        position: relative;
+}
+        .banner_content {
+            position: absolute;
+            text-align: center;
+            bottom: 200px;
+            left: 400px;
+           text-transform: capitalize;
+          
+            h3 {
+                @extend %title_h3;
+                color: $white-color;
+               
+            }
+            h1 {
+                @extend %title_h1;
+                color: $white-color;
+            }
+             #button {
+                margin-top: 30px;
+                .play {
+                    a {
+                        @extend %default_btn_white;
+                        &:hover {
+                            background-position: left;
+                            color: $white-color;
+                        }
+                        i {
+                            @extend  %btn_icon_white;
+                        }
+                    }
+            
+                }
+            }
+          }
+        }
+    
