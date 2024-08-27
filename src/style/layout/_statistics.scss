@@ -1,0 +1,32 @@
+#statistics {
+    font-family: $default-font;
+    margin-bottom: 40px;
+   .counter {
+    &__title {
+        border-bottom: 1px solid $borderbottom_color;
+        padding: 10px 0;
+        line-height: 38px;
+        h1 {
+            font-size: 44px;
+            font-weight: 700;
+            color: $primary-color;
+          
+        }
+        h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: $primary-color;
+            text-transform: capitalize;
+        }
+    }
+    &__footer {
+        padding-top: 20px;
+        p {
+        font-size: 16px;
+        font-weight: 400;
+        color: $text-color;
+        line-height: 28px;
+        }
+    }
+   }
+}

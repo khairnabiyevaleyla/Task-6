@@ -154,6 +154,7 @@ table {
   font-size: 16px;
   color: #527282;
   line-height: 29px;
+  font-weight: 400;
 }
 
 #header {
@@ -582,4 +583,33 @@ table {
 #banner .banner_content #button .play a:hover {
   background-position: left;
   color: #FFFFFF;
+}
+#statistics {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 40px;
+}
+#statistics .counter__title {
+  border-bottom: 1px solid #D9E5ED;
+  padding: 10px 0;
+  line-height: 38px;
+}
+#statistics .counter__title h1 {
+  font-size: 44px;
+  font-weight: 700;
+  color: #0E384C;
+}
+#statistics .counter__title h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #0E384C;
+  text-transform: capitalize;
+}
+#statistics .counter__footer {
+  padding-top: 20px;
+}
+#statistics .counter__footer p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #527282;
+  line-height: 28px;
 }/*# sourceMappingURL=style.css.map */
