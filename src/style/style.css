@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-#hero_banner .hero_right .hero img img, #header .navbar_menu .left .logo_img img {
+#our-team .team_member__img img, #hero_banner .hero_right .hero img img, #header .navbar_menu .left .logo_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -135,7 +135,7 @@ table {
   padding: 8px;
 }
 
-#how-it-work .top .title h3, #why-choose-us .title h3, #banner .banner_content h3, #services .title h3, #about .right .about-content .about-top h3 {
+#our-team .title h3, #how-it-work .top .title h3, #why-choose-us .title h3, #banner .banner_content h3, #services .title h3, #about .right .about-content .about-top h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5em;
@@ -144,14 +144,14 @@ table {
   color: #1E84B5;
 }
 
-#how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
+#our-team .title h1, #how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
   font-size: 44px;
   font-weight: 700;
   line-height: 50px;
   color: #0E384C;
 }
 
-#how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
+#our-team .team_title p, #our-team .title p, #how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
   font-size: 16px;
   color: #527282;
   line-height: 29px;
@@ -713,4 +713,80 @@ table {
 }
 #how-it-work .bottom .accordion .accordion-item .accordion-header .accordion-button .accordion-icon {
   margin-right: 20px;
+}
+#our-team {
+  background-color: #EFF8FF;
+  font-family: "Poppins", sans-serif;
+  padding: 30px 0;
+}
+#our-team .title {
+  padding: 20px;
+}
+#our-team .title h3 {
+  padding-bottom: 10px;
+}
+#our-team .title h1 {
+  padding-bottom: 20px;
+}
+#our-team .title h1 span {
+  color: #1E84B5;
+}
+#our-team .team_member__img {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  border-radius: 30px;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+#our-team .team_member__img img {
+  transition: all 0.5s ease-in-out;
+}
+#our-team .team_member__img img:hover {
+  transform: scale(1.1);
+}
+#our-team .team_member__img:hover .team_member__img__body {
+  transform: translate(0, -20px);
+}
+#our-team .team_member__img__body {
+  position: absolute;
+  transition: 0.2s ease-in-out;
+  bottom: -10px;
+  left: 0;
+  right: 0;
+  padding: 20px 0;
+  transform: translate(0, 100%);
+}
+#our-team .team_member__img__body__socials ul {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 12px;
+  cursor: pointer;
+}
+#our-team .team_member__img__body__socials ul i {
+  font-size: 20px;
+  width: 25px;
+  height: 25px;
+  background-color: #0E384C;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.5s ease;
+}
+#our-team .team_member__img__body__socials ul i:hover {
+  background-color: #1E84B5;
+}
+#our-team .team_title {
+  margin: 20px 0;
+  text-transform: capitalize;
+  line-height: 28px;
+}
+#our-team .team_title h3 {
+  font-size: 20px;
+  color: #0E384C;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
