@@ -1,0 +1,90 @@
+#services {
+   background-color: $bg_color;
+   padding: 50px;
+    .title { 
+        text-align: center;
+        h3 {
+            @extend %title_h3;
+        }
+        h1 {
+            @extend %title_h1;
+            color: $primary-color;
+            span {
+                color: $accent-color;
+            }
+        }
+        p {
+            @extend %title_p;  
+        }
+    }
+    .service_card {
+    @include Flexible (flex-start,start,row,wrap,10px);
+       width: 290px;
+       height: 300px;
+       background-color: $white-color;
+       border-radius: 40px;
+       padding: 10px 30px; 
+        line-height: 34px;
+        transition: 0.3s ease-out;
+        background: linear-gradient(to top, $primary-color 50%, #FFF 50%);
+        background-size: 100% 200%;
+        background-position: top;
+        &:hover {
+            background-position: bottom;   
+        }
+        &__img {
+            margin-top: 20px;
+        }
+        &__body {
+            h3 {
+                color: $accent-color;
+                font-size: 20px;
+                font-weight: 600;
+                text-transform: capitalize;
+              
+            }
+            p {
+                color: $text-color;
+                font-size: 16px;
+                &:hover {
+                    color: $white-color;
+                }
+            }
+        }
+        &__btn {
+            a {
+               text-decoration: none;
+               text-transform: capitalize;
+               font-size: 14px;
+               color: $accent-color;
+               font-weight: 600;
+               i {
+                @extend  %btn_icon;
+                background-color: $accent-color;
+                color: $white-color;
+               }
+            }
+        }
+    }
+ .service_card_footer {
+    @include Flexible (center,center,column,nowrap,20px);
+    padding: 30px;
+    font-family: $default-font;
+    p {
+        @extend %title_p;
+       text-align: center;
+       margin-bottom: 20px;
+    }
+    .footer__btn {
+        a {
+         @extend %default_btn;
+         &:hover {
+             @extend  %hoverdefault_btn;
+         }
+         i {
+            @extend %btn_icon ;
+         }
+        }
+     }
+ }
+}

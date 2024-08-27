@@ -10,18 +10,14 @@
     
             &__title {
                 h1 {
-                    font-size: 54px;
-                    font-weight: 700;
+                    @extend %title_h1;
                     color: $primary-color;
-                    line-height: 60px;
                 }
                 span {
                     color: $accent-color;
                 }
                 p {
-                    font-size: 16px;
-                    color: $text-color;
-                    line-height: 30px;
+                   @extend %title_p;
                     padding: 30px 0;
                 }
             }
