@@ -1,0 +1,56 @@
+#how-it-work {
+    font-family: $default-font;
+    .content-img {
+    .image {
+        img {
+          border-radius: 40px;
+        }
+        }
+    }
+    .top {
+        @include Flexible (center,center,column,nowrap,10px);
+        padding: 40px;
+        .title {
+            h3 {
+                @extend %title_h3;
+                margin-bottom: 10px;
+            }
+            h1 {
+                @extend %title_h1;
+                margin-bottom: 20px;
+                span {
+                    color: $accent-color;
+                }
+            }
+            p {
+                @extend %title_p;
+            }
+        }
+    }
+    .bottom {
+       .accordion {
+      
+        .accordion-item {
+            border:none;
+            border-bottom: 1px solid $borderbottom_color;
+            padding: 10px;
+            .accordion-header {
+                .accordion-button {
+                font-weight: 620;
+                line-height: 1.2em;
+                color: $primary-color;
+                font-size: 18px;
+                .accordion-icon {
+                margin-right: 20px;
+                }
+                }
+            }
+        }
+        .accordion-body {
+            strong {
+                @extend %title_p;
+            }
+        }
+       }
+    }
+}
