@@ -1,6 +1,8 @@
 #testimonials {
     font-family: $default-font;
     padding-top: 40px;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
     .title {
         h3{
             @extend %title_h3;
