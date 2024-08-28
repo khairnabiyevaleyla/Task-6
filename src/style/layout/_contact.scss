@@ -41,5 +41,17 @@
         font-weight: 400;
     }
    }
-   }
+  .book {
+    padding-top: 20px;
+    a {
+        @extend  %default_btn;
+        i {
+            @extend  %btn_icon;
+        }
+        &:hover {
+           @extend %hoverdefault_btn;
+        }
+    }
+  }
+}
 }
