@@ -1,0 +1,26 @@
+#text_banner {
+    background-color: $bg_color;
+    font-family: $default-font;
+    padding: 100px 0;
+    .banner_title {
+        h1 {
+            font-size: 54px;
+            color: $accent-color;
+            font-weight: 700;
+            text-transform: capitalize;
+            padding: 10px 0;
+            span {
+                color: $primary-color;
+            }
+        }
+        p {
+            line-height: 44px;
+            font-size: 16px;
+            color: $primary-color;
+            font-weight: 500;
+            .slash {
+                color: $accent-color;
+            }
+        }
+    }
+}

@@ -221,6 +221,13 @@ table {
 #header .navbar_menu .left .navbar .nav_menu li:hover {
   color: #1E84B5;
 }
+#header .navbar_menu .left .navbar .nav_menu li a {
+  color: #0E384C;
+  text-decoration: none;
+}
+#header .navbar_menu .left .navbar .nav_menu li a:hover {
+  color: #1E84B5;
+}
 #header .navbar_menu .left .navbar .nav_menu .home_menu {
   position: relative;
 }
@@ -1070,4 +1077,29 @@ table {
 }
 #footer .footer-copyright .footer-copyright-text {
   text-align: center;
+}
+
+#text_banner {
+  background-color: #EFF8FF;
+  font-family: "Poppins", sans-serif;
+  padding: 100px 0;
+}
+#text_banner .banner_title h1 {
+  font-size: 54px;
+  color: #1E84B5;
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 10px 0;
+}
+#text_banner .banner_title h1 span {
+  color: #0E384C;
+}
+#text_banner .banner_title p {
+  line-height: 44px;
+  font-size: 16px;
+  color: #0E384C;
+  font-weight: 500;
+}
+#text_banner .banner_title p .slash {
+  color: #1E84B5;
 }/*# sourceMappingURL=style.css.map */

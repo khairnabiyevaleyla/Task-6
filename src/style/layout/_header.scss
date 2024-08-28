@@ -32,8 +32,15 @@
             font-weight: 500;
             cursor: pointer;
             li {
-                &:hover {
+              &:hover {
                     color: $accent-color;
+                }
+                a {
+                    color: $primary-color;
+                    text-decoration: none;
+                    &:hover {
+                        color: $accent-color;
+                    }
                 }
             }
             .home_menu {
