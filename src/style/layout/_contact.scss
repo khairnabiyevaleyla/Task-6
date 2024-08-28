@@ -1,0 +1,45 @@
+#contact-now {
+    font-family: $default-font;
+     .google-map {
+        padding-bottom: 90%;
+        position: relative;
+       
+        iframe {
+            height: 100%;
+            width: 100%;
+            left: 0;
+            top: 0;
+            position: absolute;
+            border-radius: 40px;
+            filter: grayscale(3);
+            transition: 0.3s ease-in-out;
+            &:hover {
+                filter: grayscale(0); 
+            }
+       }
+   }
+   .title {
+    padding-bottom: 30px;
+    line-height: 38px;
+    h3 {
+        @extend %title_h3;
+    }
+    h1 {
+        @extend %title_h1; 
+        span {
+            color: $accent-color;
+        }
+    }
+   }
+   .contact-details {
+    @include Flexible (flex-start,start,column,nowrap,20px);
+   .info {
+    @include Flexible (center,center,row,nowrap,10px);
+    p {
+        font-size: 16px;
+        color: $text-color;
+        font-weight: 400;
+    }
+   }
+   }
+}
