@@ -135,7 +135,7 @@ table {
   padding: 8px;
 }
 
-#our-team .title h3, #how-it-work .top .title h3, #why-choose-us .title h3, #banner .banner_content h3, #services .title h3, #about .right .about-content .about-top h3 {
+#testimonials .title h3, #our-team .title h3, #how-it-work .top .title h3, #why-choose-us .title h3, #banner .banner_content h3, #services .title h3, #about .right .about-content .about-top h3 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1.5em;
@@ -144,14 +144,14 @@ table {
   color: #1E84B5;
 }
 
-#our-team .title h1, #how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
+#testimonials .title h1, #our-team .title h1, #how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
   font-size: 44px;
   font-weight: 700;
   line-height: 50px;
   color: #0E384C;
 }
 
-#our-team .team_title p, #our-team .title p, #how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
+#testimonials .title p, #our-team .team_title p, #our-team .title p, #how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
   font-size: 16px;
   color: #527282;
   line-height: 29px;
@@ -789,4 +789,132 @@ table {
   font-size: 20px;
   color: #0E384C;
   font-weight: 600;
+}
+#testimonials {
+  font-family: "Poppins", sans-serif;
+  padding-top: 40px;
+}
+#testimonials .title h1 span {
+  color: #1E84B5;
+}
+#testimonials .left .testimonial-image {
+  position: relative;
+}
+#testimonials .left .testimonial-image .testimonial-img img {
+  border-radius: 40px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box {
+  position: absolute;
+  background-color: #1E84B5;
+  border-radius: 30px;
+  padding: 30px;
+  border: 6px solid #FFFFFF;
+  max-width: 450px;
+  bottom: -70px;
+  left: 40px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_content {
+  text-align: center;
+  border-bottom: 1px solid #D9E5ED;
+  padding: 0 10px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_content__rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
+  padding-bottom: 10px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_content__rate h3 {
+  font-size: 44px;
+  color: #FFFFFF;
+  font-weight: 700;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_content__rate p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  width: 200px;
+  text-align: start;
+  line-height: 28px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_bottom__rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+  padding-top: 20px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_bottom__rating ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 5px;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_bottom__rating ul li {
+  color: #FFA800;
+}
+#testimonials .left .testimonial-image .testimonial-rating-box .top_bottom__rating p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-transform: capitalize;
+}
+#testimonials .testimonial-content {
+  padding: 40px;
+}
+#testimonials .testimonial-content .testimonial_top {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#testimonials .testimonial-content .testimonial_top p {
+  font-size: 18px;
+  color: #0E384C;
+  font-weight: 500;
+  line-height: 34px;
+  text-align: start;
+  margin-bottom: 20px;
+}
+#testimonials .testimonial-content .testimonial_bottom {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#testimonials .testimonial-content .testimonial_bottom .left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+#testimonials .testimonial-content .testimonial_bottom .left img {
+  border-radius: 100%;
+  margin-bottom: 20px;
+}
+#testimonials .testimonial-content .testimonial_bottom .right {
+  text-align: start;
+  line-height: 30px;
+}
+#testimonials .testimonial-content .testimonial_bottom .right h3 {
+  color: #0E384C;
+  font-size: 20px;
+  font-weight: 600;
+}
+#testimonials .testimonial-content .testimonial_bottom .right p {
+  color: #527282;
+  font-size: 16px;
 }/*# sourceMappingURL=style.css.map */
