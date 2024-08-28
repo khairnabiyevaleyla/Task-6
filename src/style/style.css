@@ -162,7 +162,7 @@ table {
 #header {
   font-family: "Poppins", sans-serif;
   background-color: #EFF8FF;
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
 }
 @media (max-width: 600px) {
   #header {
@@ -261,7 +261,7 @@ table {
 }
 #hero_banner .hero .hero_content {
   padding: 0 0 30px 20px;
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
   margin-left: 50px;
 }
 #hero_banner .hero .hero_content__title h1 {
@@ -591,7 +591,7 @@ table {
   margin-bottom: 40px;
 }
 #statistics .counter__title {
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
   padding: 10px 0;
   line-height: 38px;
 }
@@ -703,7 +703,7 @@ table {
 }
 #how-it-work .bottom .accordion .accordion-item {
   border: none;
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
   padding: 10px;
 }
 #how-it-work .bottom .accordion .accordion-item .accordion-header .accordion-button {
@@ -818,7 +818,7 @@ table {
 }
 #testimonials .left .testimonial-image .testimonial-rating-box .top_content {
   text-align: center;
-  border-bottom: 1px solid #D9E5ED;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
   padding: 0 10px;
 }
 #testimonials .left .testimonial-image .testimonial-rating-box .top_content__rate {
@@ -1027,4 +1027,47 @@ table {
 }
 #contact-now .contact-details .book {
   padding-top: 20px;
+}
+#footer {
+  color: #FFFFFF;
+  font-family: "Poppins", sans-serif;
+  background-color: #0E384C;
+  padding: 30px 0;
+}
+#footer .about-footer .logo {
+  margin-bottom: 35px;
+}
+#footer .about-footer .logo img {
+  width: 100%;
+  max-width: 220px;
+}
+#footer .about-footer .footer_text p {
+  color: 16px;
+  line-height: 1.8em;
+  padding-bottom: 20px;
+}
+#footer .footer-links h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+#footer .footer-links ul {
+  line-height: 33px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#footer .footer-links ul li {
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  font-size: 16px;
+}
+#footer .footer-links ul li:hover {
+  color: #1E84B5;
+}
+#footer .footer-copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1215686275);
+}
+#footer .footer-copyright .footer-copyright-text {
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
