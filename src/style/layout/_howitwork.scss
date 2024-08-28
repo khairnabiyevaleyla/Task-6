@@ -29,11 +29,13 @@
     }
     .bottom {
        .accordion {
-      
-        .accordion-item {
+         .accordion-item {
             border:none;
             border-bottom: 1px solid $borderbottom_color;
             padding: 10px;
+            --bs-accordion-active-bg: none;
+            --bs-accordion-btn-focus-box-shadow: none;
+            
             .accordion-header {
                 .accordion-button {
                 font-weight: 620;

@@ -53,7 +53,7 @@ table {
   border-spacing: 0;
 }
 
-#blog .blog_card__img img, #our-team .team_member__img img, #hero_banner .hero_right .hero img img, #header .navbar_menu .left .logo_img img {
+#service-page .service-article .service-article__img2 img, #service-page .service-article .service-article__img1 img, #service-page .service-article__img img, #blog .blog_card__img img, #our-team .team_member__img img, #hero_banner .hero_right .hero img img, #header .navbar_menu .left .logo_img img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -94,7 +94,7 @@ table {
   background-position: right;
 }
 
-#banner .banner_content #button .play a {
+#service-page .sidebar .contact-sidebar .sidebar_btn a, #banner .banner_content #button .play a {
   padding: 14px 11px 14px 20px;
   background-color: #FFFFFF;
   border-radius: 99px;
@@ -111,7 +111,7 @@ table {
   background-position: right;
 }
 
-#contact-now .contact-details .book a:hover, #services .service_card_footer .footer__btn a:hover, #about .right .about-content .about_btn .button .book a:hover, #infobar .button .book a:hover, #hero_banner .hero .hero_content .book a:hover, #header .navbar_menu .right .book a:hover {
+#service-page .sidebar .contact-sidebar .sidebar_btn a:hover, #contact-now .contact-details .book a:hover, #services .service_card_footer .footer__btn a:hover, #about .right .about-content .about_btn .button .book a:hover, #infobar .button .book a:hover, #hero_banner .hero .hero_content .book a:hover, #header .navbar_menu .right .book a:hover {
   background-position: left;
 }
 
@@ -125,7 +125,7 @@ table {
   padding: 8px;
 }
 
-#blog .blog_card__body a i, #banner .banner_content #button .play a i {
+#service-page .sidebar .contact-sidebar .sidebar_btn a i, #blog .blog_card__body a i, #banner .banner_content #button .play a i {
   background-color: #1E84B5;
   color: #FFFFFF;
   border-radius: 100%;
@@ -145,14 +145,14 @@ table {
   font-weight: 400;
 }
 
-#contact-now .title h1, #blog .title h1, #testimonials .title h1, #our-team .title h1, #how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
+#service-page .faq h1, #contact-now .title h1, #blog .title h1, #testimonials .title h1, #our-team .title h1, #how-it-work .top .title h1, #why-choose-us .title h1, #banner .banner_content h1, #services .title h1, #about .right .about-content .about-top h1, #hero_banner .hero .hero_content__title h1 {
   font-size: 44px;
   font-weight: 700;
   line-height: 50px;
   color: #0E384C;
 }
 
-#blog .blog_card__body p, #blog .title p, #testimonials .title p, #our-team .team_title p, #our-team .title p, #how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
+#service-page .faq .accordion .accordion-body strong, #blog .blog_card__body p, #blog .title p, #testimonials .title p, #our-team .team_title p, #our-team .title p, #how-it-work .bottom .accordion .accordion-body strong, #how-it-work .top .title p, #why-choose-us .choose-box-right .content p, #why-choose-us .choose-box-left .content p, #why-choose-us .title p, #services .service_card_footer p, #services .title p, #about .right .about-content .about-top p, #hero_banner .hero .hero_content__title p {
   font-size: 16px;
   color: #527282;
   line-height: 29px;
@@ -712,6 +712,8 @@ table {
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1215686275);
   padding: 10px;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
 }
 #how-it-work .bottom .accordion .accordion-item .accordion-header .accordion-button {
   font-weight: 620;
@@ -1102,4 +1104,127 @@ table {
 }
 #text_banner .banner_title p .slash {
   color: #1E84B5;
+}
+
+#service-page {
+  font-family: "Poppins", sans-serif;
+}
+#service-page .sidebar {
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+#service-page .sidebar .service-sidebar {
+  background-color: #EFF8FF;
+  text-transform: capitalize;
+  border-radius: 30px;
+  padding: 30px;
+  line-height: 34px;
+  margin-bottom: 35px;
+  width: 350px;
+}
+#service-page .sidebar .service-sidebar h3 {
+  font-size: 20px;
+  color: #0E384C;
+  font-weight: 600;
+}
+#service-page .sidebar .service-sidebar ul {
+  padding: 10px 0;
+}
+#service-page .sidebar .service-sidebar ul li {
+  font-size: 16px;
+  line-height: 38px;
+  color: #0E384C;
+  border-bottom: 1px solid rgba(14, 56, 76, 0.1019607843);
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+#service-page .sidebar .service-sidebar ul li:hover {
+  color: #1E84B5;
+}
+#service-page .sidebar .contact-sidebar {
+  background-color: #1E84B5;
+  color: #FFFFFF;
+  border-radius: 30px;
+  padding: 40px;
+  min-height: 350px;
+  text-align: center;
+  width: 350px;
+}
+#service-page .sidebar .contact-sidebar .sidebar_content h3 {
+  font-size: 36px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+#service-page .sidebar .contact-sidebar .sidebar_content p {
+  font-size: 16px;
+  line-height: 34px;
+}
+#service-page .sidebar .contact-sidebar .sidebar_btn {
+  padding: 10px 0;
+  margin-top: 10px;
+}
+#service-page .service-article__img img {
+  border-radius: 40px;
+}
+#service-page .service-article__text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 30px 0;
+  color: #0E384C;
+}
+#service-page .service-article__text p {
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  color: #527282;
+}
+#service-page .service-article__options {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 120px;
+  font-size: 16px;
+  color: #0E384C;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 40px;
+  margin-bottom: 50px;
+}
+#service-page .service-article__options i {
+  font-size: 22px;
+  color: #1E84B5;
+}
+#service-page .service-article .service-article__img1 img {
+  border-radius: 40px;
+}
+#service-page .service-article .service-article__img2 img {
+  border-radius: 40px;
+}
+#service-page .service-article .service-article_text p {
+  margin: 30px 0;
+  line-height: 1.8em;
+  color: #527282;
+}
+#service-page .faq .accordion {
+  margin-top: 30px;
+}
+#service-page .faq .accordion .accordion-item {
+  border-radius: 10px;
+  border: none;
+  border: 2px solid rgba(14, 56, 76, 0.1019607843);
+  outline: none;
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-border-color:none;
+  margin-bottom: 20px;
+}
+#service-page .faq .accordion .accordion-item .accordion-header .accordion-button {
+  font-size: 20px;
+  color: #0E384C;
+  text-transform: capitalize;
+  font-weight: 600;
 }/*# sourceMappingURL=style.css.map */
